@@ -1,7 +1,7 @@
 function submitForm() {  
 
     // Obtener el formulario  
-    const form = document.getElementById('myForm');  // Aquí está el cambio  
+    const form = document.getElementById('myForm'); 
 
 
 
