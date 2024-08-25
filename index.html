@@ -1,0 +1,50 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Formulario de Ejemplo</title>  
+    <link rel="stylesheet" href="./public/styles.css">  
+</head>  
+<body>  
+    <div class="container">
+
+    <h1>Formulario de Película de Harry Potter Favorita</h1>  
+    
+    <form id="myForm">  
+        <label for="input1">Nombre</label>  
+        <input type="text" id="input1" name="input1" required>  
+
+        <label for="input2">Email</label> 
+        <input type="text" id="input2" name="input2" required>  
+
+        <label for="select">Selecciona tu película preferida</label>  
+        <select id="select" name="select" required>  
+            <option value="">Elige una opción</option>  
+            <option value="Harry Potter y la piedra filosofal">Harry Potter y la piedra filosofal</option>  
+            <option value="Harry Potter y la cámara secreta">Harry Potter y la cámara secreta</option>  
+            <option value="Harry Potter y el prisionero de Azkaban">Harry Potter y el prisionero de Azkaban</option>  
+            <option value="Harry Potter y el cáliz de fuego">Harry Potter y el cáliz de fuego</option>  
+            <option value="Harry Potter y la Orden del Fénix">Harry Potter y la Orden del Fénix</option>  
+            <option value="Harry Potter y el misterio del príncipe">Harry Potter y el misterio del príncipe</option>  
+            <option value="Harry Potter y las reliquias de la Muerte: parte 1">Harry Potter y las reliquias de la Muerte: parte 1</option>  
+            <option value="Harry Potter y las reliquias de la Muerte: parte 2">Harry Potter y las reliquias de la Muerte: parte 2</option>  
+        </select>  
+
+        <label for="textarea">Comentarios:</label>  
+        <textarea id="textarea" name="textarea" rows="4" required></textarea>  
+
+        <button type="button" onclick="submitForm()">Enviar</button>  
+    </form>  
+
+    <div id="successMessage" style="display:none; margin-top: 20px;">  
+        <h2>¡Formulario enviado correctamente!</h2>  
+        
+    </div>  
+</div>
+
+    
+
+    <script src="./public/scripts.js"></script>  
+</body>  
+</html>
